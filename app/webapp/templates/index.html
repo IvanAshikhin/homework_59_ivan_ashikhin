@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% block menu %}
     <li><a href="{% url 'task_add' %}">Add Task</a></li>
+    <li><a href="{% url 'index_projects' %}">Projects</a></li>
 {% endblock %}
 {% block content %}
     <h1 class='task'>Tasks:</h1>
