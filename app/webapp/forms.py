@@ -27,7 +27,6 @@ class NotStartWithNumberValidator(BaseValidator):
         return None
 
 
-
 class TaskForm(forms.ModelForm):
     summary = forms.CharField(validators=[MaxLengthValidator()])
     description = forms.CharField(validators=[NotStartWithNumberValidator()])

@@ -5,6 +5,14 @@
 {% block content %}
     <h1 class='task'>Tasks:</h1>
     <hr/>
+        <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <form class="d-flex" role="search" method="GET">
+                <input class="form-control me-2" type="search" name="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
     {% for task in tasks %}
         <h2>{{ task.summary }}</h2>
         <div>{{ task.description }}</div>
@@ -20,3 +28,5 @@
         {% include 'particial/pagination.html' %}
     {% endif %}
 {% endblock %}
+
+
