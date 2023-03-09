@@ -23,6 +23,8 @@
         <div>{{ task.created_at }}</div>
         <p><a href="{% url 'detail_task' task.pk %}">More...</a></p>
         <hr/>
+        {% empty  %}
+        <p class="not_found">NOT FOUND 404</p>
     {% endfor %}
     {% if is_paginated %}
         {% include 'particial/pagination.html' %}
