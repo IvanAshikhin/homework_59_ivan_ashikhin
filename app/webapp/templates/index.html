@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block menu %}
-   <li><a href="{% url 'task_add' %}">Add Task</a></li>
+    <li><a href="{% url 'task_add' %}">Add Task</a></li>
 {% endblock %}
 {% block content %}
     <h1 class='task'>Tasks:</h1>
@@ -9,11 +9,14 @@
         <h2>{{ task.summary }}</h2>
         <div>{{ task.description }}</div>
         <div>{{ task.status }}</div>
-         {% for task_type in task.type.all %}
-                <div>{{ task_type }}</div>
+        {% for task_type in task.type.all %}
+            <div>{{ task_type }}</div>
         {% endfor %}
         <div>{{ task.created_at }}</div>
         <p><a href="{% url 'detail_task' task.pk %}">More...</a></p>
         <hr/>
     {% endfor %}
+    {% if is_paginated %}
+        {% include 'particial/pagination.html' %}
+    {% endif %}
 {% endblock %}
