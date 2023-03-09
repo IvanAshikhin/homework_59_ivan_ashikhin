@@ -1,8 +1,10 @@
+from django.urls import reverse
 from django.views.generic import ListView, DetailView, CreateView
 
 from webapp.models.project import Project
-
 from webapp.models import Task
+
+from webapp.forms import ProjectForm
 
 
 class ProjectsIndexView(ListView):
@@ -23,8 +25,12 @@ class ProjectDetail(DetailView):
         return context
 
 
-class AddProject(CreateView):
-    template_name = 'task_add.html'
-    model = Task
-    context_object_name = 'tasks'
-    form_class = TaskForm
+class AddProjectView(CreateView):
+    template_name = 'project_add.html'
+    model = Project
+    context_object_name = 'projects'
+    form_class = ProjectForm
+
+
+    def get_success_url(self):
+        return reverse('project_detail', kwargs={'pk': self.object.pk})

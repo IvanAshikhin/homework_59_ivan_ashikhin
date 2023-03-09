@@ -3,6 +3,7 @@ from django.core.exceptions import ValidationError
 from django.core.validators import BaseValidator
 
 from .models import Task
+from .models.project import Project
 
 
 class MaxLengthValidator(BaseValidator):
@@ -12,7 +13,6 @@ class MaxLengthValidator(BaseValidator):
 
     def compare(self, value, limit_value):
         return limit_value <= len(value)
-
 
 
 class TaskForm(forms.ModelForm):
@@ -28,6 +28,25 @@ class TaskForm(forms.ModelForm):
             'status': 'Статус',
             'type': 'Тип задачи'
 
+        }
+
+
+class DateInput(forms.DateInput):
+    input_type = 'date'
+
+
+class ProjectForm(forms.ModelForm):
+    class Meta:
+        model = Project
+        fields = ['name', 'description', 'start_date', 'end_date']
+        widgets = {
+            'start_date': DateInput(),
+            'end_date': DateInput()
+
+        }
+        labels = {
+            'name': 'Название',
+            'description': 'Описание',
         }
 
 
