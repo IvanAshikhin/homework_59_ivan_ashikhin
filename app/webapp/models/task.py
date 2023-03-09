@@ -11,6 +11,11 @@ class Task(models.Model):
                                   verbose_name='Тип задачи', blank=True)
     created_at = models.DateTimeField(auto_now=True, null=False, verbose_name='Время создания')
     edit_time = models.DateTimeField(auto_now=False, null=True, verbose_name='Время редактирования')
+    is_deleted = models.BooleanField(default=False)
+
+    def delete(self, using=None, keep_parents=False):
+        self.is_deleted = True
+        self.save()
 
     def __str__(self):
         return f'{self.summary} - {self.description} - {self.status} - {self.type} - {self.created_at}'
