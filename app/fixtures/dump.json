@@ -1,0 +1,320 @@
+[
+{
+    "model": "webapp.status",
+    "pk": 1,
+    "fields": {
+        "name": "new"
+    }
+},
+{
+    "model": "webapp.status",
+    "pk": 2,
+    "fields": {
+        "name": "in progress"
+    }
+},
+{
+    "model": "webapp.status",
+    "pk": 3,
+    "fields": {
+        "name": "done"
+    }
+},
+{
+    "model": "webapp.type",
+    "pk": 1,
+    "fields": {
+        "name": "task"
+    }
+},
+{
+    "model": "webapp.type",
+    "pk": 3,
+    "fields": {
+        "name": "bug"
+    }
+},
+{
+    "model": "webapp.type",
+    "pk": 4,
+    "fields": {
+        "name": "enhancement"
+    }
+},
+{
+    "model": "webapp.task",
+    "pk": 1,
+    "fields": {
+        "summary": "Писать код",
+        "description": "Писать код очень усердно два часа",
+        "status": 3,
+        "created_at": "2023-03-02T07:15:23.751Z",
+        "edit_time": "2023-03-02T07:15:23.741Z",
+        "type": [
+            1
+        ]
+    }
+},
+{
+    "model": "webapp.task",
+    "pk": 2,
+    "fields": {
+        "summary": "Покушать",
+        "description": "Вкусную пиицу",
+        "status": 3,
+        "created_at": "2023-03-02T13:44:20.756Z",
+        "edit_time": "2023-03-07T13:21:13.140Z",
+        "type": [
+            3
+        ]
+    }
+},
+{
+    "model": "webapp.task",
+    "pk": 3,
+    "fields": {
+        "summary": "Кино",
+        "description": "Боевик посмотреть",
+        "status": 3,
+        "created_at": "2023-03-02T13:45:23.613Z",
+        "edit_time": null,
+        "type": [
+            1
+        ]
+    }
+},
+{
+    "model": "webapp.task",
+    "pk": 4,
+    "fields": {
+        "summary": "Тренировка",
+        "description": "Покачать бицепс",
+        "status": 3,
+        "created_at": "2023-03-02T13:46:10.622Z",
+        "edit_time": null,
+        "type": []
+    }
+},
+{
+    "model": "webapp.task",
+    "pk": 5,
+    "fields": {
+        "summary": "Исправить всякие проблемы",
+        "description": "Найти и справить ошибки",
+        "status": 2,
+        "created_at": "2023-03-02T14:01:51.391Z",
+        "edit_time": null,
+        "type": []
+    }
+},
+{
+    "model": "webapp.task",
+    "pk": 6,
+    "fields": {
+        "summary": "аааааааа",
+        "description": "аааааааааа",
+        "status": 3,
+        "created_at": "2023-03-03T07:15:39.107Z",
+        "edit_time": "2023-03-07T07:15:39.105Z",
+        "type": [
+            1
+        ]
+    }
+},
+{
+    "model": "webapp.task",
+    "pk": 9,
+    "fields": {
+        "summary": "Кино",
+        "description": "bnjklhglygl",
+        "status": 3,
+        "created_at": "2023-03-02T17:38:43.584Z",
+        "edit_time": "2023-03-02T17:38:43.575Z",
+        "type": [
+            4
+        ]
+    }
+},
+{
+    "model": "webapp.task",
+    "pk": 10,
+    "fields": {
+        "summary": "Покушать",
+        "description": "vmvmvm",
+        "status": 1,
+        "created_at": "2023-03-07T04:52:57.728Z",
+        "edit_time": null,
+        "type": [
+            1
+        ]
+    }
+},
+{
+    "model": "webapp.task",
+    "pk": 11,
+    "fields": {
+        "summary": "Писать код",
+        "description": "долго",
+        "status": 3,
+        "created_at": "2023-03-02T07:24:36.200Z",
+        "edit_time": "2023-03-02T07:24:36.190Z",
+        "type": [
+            3
+        ]
+    }
+},
+{
+    "model": "webapp.task",
+    "pk": 12,
+    "fields": {
+        "summary": "Смотреть телевизор",
+        "description": "смотреть любимую прогграмму",
+        "status": 2,
+        "created_at": "2023-03-07T06:41:50.761Z",
+        "edit_time": null,
+        "type": [
+            4
+        ]
+    }
+},
+{
+    "model": "webapp.task",
+    "pk": 13,
+    "fields": {
+        "summary": "Выпить лекарство",
+        "description": "Выпить сироп от кашля",
+        "status": 3,
+        "created_at": "2023-03-04T07:15:46.989Z",
+        "edit_time": "2023-03-07T07:15:46.979Z",
+        "type": [
+            3
+        ]
+    }
+},
+{
+    "model": "webapp.task",
+    "pk": 14,
+    "fields": {
+        "summary": "Чекнуть ошибки",
+        "description": "Посмотреть и исправить ошибки",
+        "status": 2,
+        "created_at": "2023-03-07T06:44:45.914Z",
+        "edit_time": null,
+        "type": [
+            3
+        ]
+    }
+},
+{
+    "model": "webapp.task",
+    "pk": 15,
+    "fields": {
+        "summary": "Писать контрольную и искать проблемы",
+        "description": "Писать контрольную и искать проблемы",
+        "status": 3,
+        "created_at": "2023-03-02T07:08:37.412Z",
+        "edit_time": "2023-03-02T13:20:33.410Z",
+        "type": [
+            3
+        ]
+    }
+},
+{
+    "model": "webapp.task",
+    "pk": 16,
+    "fields": {
+        "summary": "Учить Пайтон",
+        "description": "ыаыаыаыа",
+        "status": 1,
+        "created_at": "2023-03-07T07:30:00.924Z",
+        "edit_time": null,
+        "type": [
+            3
+        ]
+    }
+},
+{
+    "model": "webapp.task",
+    "pk": 17,
+    "fields": {
+        "summary": "Исправить всякие проблемы",
+        "description": "выаывавываыва",
+        "status": 2,
+        "created_at": "2023-03-07T07:30:16.192Z",
+        "edit_time": null,
+        "type": [
+            4
+        ]
+    }
+},
+{
+    "model": "webapp.task",
+    "pk": 18,
+    "fields": {
+        "summary": "Тренировка!",
+        "description": "Пргыть бегать",
+        "status": 1,
+        "created_at": "2023-03-07T07:30:42.114Z",
+        "edit_time": null,
+        "type": [
+            4
+        ]
+    }
+},
+{
+    "model": "webapp.task",
+    "pk": 19,
+    "fields": {
+        "summary": "Проверять домашку",
+        "description": "ываываыва",
+        "status": 2,
+        "created_at": "2023-03-07T07:31:00.913Z",
+        "edit_time": null,
+        "type": [
+            4
+        ]
+    }
+},
+{
+    "model": "webapp.task",
+    "pk": 20,
+    "fields": {
+        "summary": "Искать ошибку",
+        "description": "даааааа",
+        "status": 1,
+        "created_at": "2023-03-07T07:32:06.185Z",
+        "edit_time": null,
+        "type": [
+            3
+        ]
+    }
+},
+{
+    "model": "webapp.task",
+    "pk": 21,
+    "fields": {
+        "summary": "Сложная ошибка",
+        "description": "чсмчсмчсмчм",
+        "status": 2,
+        "created_at": "2023-03-07T07:32:23.324Z",
+        "edit_time": null,
+        "type": [
+            3
+        ]
+    }
+},
+{
+    "model": "webapp.task",
+    "pk": 22,
+    "fields": {
+        "summary": "Читать сложные ошибки",
+        "description": "ыавывпывппв",
+        "status": 2,
+        "created_at": "2023-03-07T07:32:45.772Z",
+        "edit_time": null,
+        "type": [
+            3
+        ]
+    }
+}
+]
