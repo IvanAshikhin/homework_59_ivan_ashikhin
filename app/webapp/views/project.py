@@ -23,7 +23,7 @@ class ProjectDetail(DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         project = self.get_object()
-        context['tasks'] = Task.objects.filter(project=project.pk)
+        context['tasks'] = Task.objects.filter(project=project.pk).exclude(is_deleted=True)
         return context
 
 
