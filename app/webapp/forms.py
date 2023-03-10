@@ -50,5 +50,17 @@ class ProjectForm(forms.ModelForm):
         }
 
 
+class ProjectTaskForm(forms.ModelForm):
+    class Meta:
+        model = Task
+        fields = ['summary', 'description', 'type', 'status', 'project']
+        labels = {
+            'summary': 'Заголовок',
+            'description': 'Описание',
+            'status': 'Статус',
+            'type': 'Тип задачи'
+        }
+
+
 class SearchForm(forms.Form):
     search = forms.CharField(max_length=20, required=False, label='Find')

@@ -1,8 +1,7 @@
 {% extends "base.html" %}
 {% block title %}{{ projects.name }}{% endblock %}
 {% block menu %}
-    <li><a href="#">Update Project</a></li>
-    <li><a href="#">Delete Project</a></li>
+ <li><a href="{% url 'project_task_add' pk=projects.pk %}">Add Task</a></li>
 {% endblock %}
 {% block content %}
     <h1 class="detail">Name: {{ projects.name }}</h1>
@@ -19,5 +18,6 @@
     {% endfor %}
     <p class="details">Created at: {{ task.created_at }}</p>
     <p class="details">Edit time: {{ task.edit_time }}</p>
+    <p><a href="{% url 'detail_task' task.pk %}">More...</a></p>
     {% endfor %}
 {% endblock %}

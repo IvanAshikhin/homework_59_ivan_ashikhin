@@ -9,10 +9,10 @@ from webapp.models import Type
 
 
 class TypeAdmin(admin.ModelAdmin):
-        list_display = ('name',)
-        list_filter = ('name',)
-        search_fields = ('name',)
-        fields = ('name',)
+    list_display = ('name',)
+    list_filter = ('name',)
+    search_fields = ('name',)
+    fields = ('name',)
 
 
 class StatusAdmin(admin.ModelAdmin):
@@ -20,7 +20,6 @@ class StatusAdmin(admin.ModelAdmin):
     list_filter = ('name',)
     search_fields = ('name',)
     fields = ('name',)
-
 
 
 class TaskAdmin(admin.ModelAdmin):
